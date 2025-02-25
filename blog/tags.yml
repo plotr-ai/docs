@@ -1,0 +1,19 @@
+plotr:
+  label: plotr
+  permalink: /plotr
+  description: Posts about plotr.ai
+
+genai:
+  label: genai
+  permalink: /genai
+  description: Posts about genai
+
+agile:
+  label: agile
+  permalink: /agile
+  description: Posts about agile
+
+scrum:
+  label: scrum
+  permalink: /scrum
+  description: Posts about scrum

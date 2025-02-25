@@ -1,0 +1,42 @@
+{
+  "explorer.fileNesting.enabled": true,
+  "explorer.fileNesting.patterns": {
+    "*.ts": "${capture}.js, ${capture}.js.map, ${capture}.d.ts, ${capture}.web.ts, ${capture}.web.js, ${capture}.web.js.map",
+    "*.js": "${capture}.js.map, ${capture}.min.js, ${capture}.d.ts, ${capture}.web.ts, ${capture}.web.js, ${capture}.web.js.map",
+    "*.jsx": "${capture}.js, ${capture}.js.map, ${capture}.d.ts, ${capture}.web.tsx, ${capture}.web.js, ${capture}.web.js.map, ${capture}.web.d.ts, ${capture}.stories.jsx",
+    "*.tsx": "${capture}.ts, ${capture}.ts.map, ${capture}.d.ts, ${capture}.web.tsx, ${capture}.web.js, ${capture}.web.js.map, ${capture}.web.d.ts, ${capture}.stories.tsx",
+    "tsconfig.json": "tsconfig.*.json",
+    "package.json": "package-lock.json, yarn.lock, pnpm-lock.yaml, bun.lockb"
+  },
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "typescript.enablePromptUseWorkspaceTsdk": true,
+  "editor.insertSpaces": true,
+  "editor.tabSize": 2,
+  "editor.formatOnSave": false,
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "eslint.workingDirectories": [{ "mode": "auto" }],
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact"
+  ],
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "always"
+  },
+  "tailwindCSS.classAttributes": ["class", "className", "headerClassName"]
+}

@@ -1,0 +1,36 @@
+name: Test Deploy Ramses Documentation
+
+on:
+  pull_request:
+    branches:
+      - main
+
+permissions:
+  contents: read
+
+jobs:
+  test-deploy:
+    name: Test deployment
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18
+          cache: yarn
+          cache-dependency-path: '**/yarn.lock'
+
+      - name: Install dependencies
+        run: yarn install --frozen-lockfile
+
+      - name: Test build website
+        run: yarn build
+
+      - name: Upload artifact for visual inspection
+        uses: actions/upload-artifact@v4
+        with:
+          name: docusaurus-build
+          path: ./build
+          retention-days: 7

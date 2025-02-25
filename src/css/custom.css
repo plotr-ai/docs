@@ -1,0 +1,64 @@
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+/* You can override the default Infima variables here. */
+:root {
+  --ifm-color-primary: #5DBF94;
+  --ifm-color-primary-dark: #53A986;
+  --ifm-color-primary-darker: #488F75;
+  --ifm-color-primary-darkest: #386B5E;
+  --ifm-color-primary-light: #5ab990;
+  --ifm-color-primary-lighter: #6ec9a2;
+  --ifm-color-primary-lightest: #82d9b4;
+  --ifm-code-font-size: 95%;
+  --ifm-navbar-background-color: #1B2732;
+  --ifm-footer-background-color: #1B2732;
+  --ifm-navbar-link-color: #ffffff;
+  --ifm-footer-link-color: #ffffff;
+  --ifm-menu-color-active: #5DBF94;
+}
+
+/* For readability concerns, you should choose a lighter palette in dark mode. */
+[data-theme='dark'] {
+  --ifm-color-primary: #82d9b4;
+  --ifm-color-primary-dark: #6ec9a2;
+  --ifm-color-primary-darker: #5ab990;
+  --ifm-color-primary-darkest: #53A986;
+  --ifm-color-primary-light: #96e3c2;
+  --ifm-color-primary-lighter: #aaecd0;
+  --ifm-color-primary-lightest: #bef5de;
+  --ifm-navbar-background-color: #1B2732;
+  --ifm-footer-background-color: #1B2732;
+  --ifm-background-color: #242526;
+  --ifm-navbar-link-color: #ffffff;
+  --ifm-footer-link-color: #ffffff;
+}
+
+.hero--primary {
+  --ifm-hero-background-color: #1B2732;
+  --ifm-hero-text-color: #ffffff;
+}
+
+.footer--dark {
+  --ifm-footer-background-color: #1B2732;
+}
+
+.navbar {
+  --ifm-navbar-background-color: #1B2732;
+}
+
+/* Button styles */
+.button.button--secondary {
+  background-color: #5DBF94;
+  border-color: #5DBF94;
+  color: white;
+}
+
+.button.button--secondary:hover {
+  background-color: #53A986;
+  border-color: #53A986;
+  color: white;
+}
