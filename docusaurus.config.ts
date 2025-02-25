@@ -56,6 +56,12 @@ const config: Config = {
           blogSidebarTitle: 'Recent Posts',
           postsPerPage: 5,
         },
+        sitemap: {
+          changefreq: 'weekly',
+          priority: 0.5,
+          ignorePatterns: ['/tags/**'],
+          filename: 'sitemap.xml',
+        },
         theme: {
           customCss: './src/css/custom.css',
         },

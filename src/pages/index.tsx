@@ -4,6 +4,7 @@ import Link from '@docusaurus/Link'
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext'
 import Layout from '@theme/Layout'
 import HomepageFeatures from '@site/src/components/HomepageFeatures'
+import BlogCarousel from '@site/src/components/BlogCarousel'
 import useBaseUrl from '@docusaurus/useBaseUrl'
 import Heading from '@theme/Heading'
 import styles from './index.module.css'
@@ -50,6 +51,7 @@ export default function Home(): JSX.Element {
       <HomepageHeader />
       <main>
         <HomepageFeatures />
+        <BlogCarousel />
       </main>
     </Layout>
   )

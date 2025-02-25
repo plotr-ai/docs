@@ -1,0 +1,83 @@
+.carouselContainer {
+  margin: 2rem auto;
+  max-width: 1200px;
+  padding: 0 1rem;
+}
+
+.carousel {
+  position: relative;
+  overflow: hidden;
+  min-height: 300px;
+  border-radius: 8px;
+  background: var(--ifm-color-primary-darkest);
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  padding: 2rem;
+}
+
+.slide.active {
+  opacity: 1;
+}
+
+.slideContent {
+  display: block;
+  height: 100%;
+  color: white;
+  text-decoration: none;
+}
+
+.slideContent:hover {
+  color: white;
+  text-decoration: none;
+}
+
+.slideContent h2 {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+
+.slideContent p {
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+  opacity: 0.9;
+}
+
+.date {
+  display: block;
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
+.dots {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: none;
+  background-color: var(--ifm-color-primary-lighter);
+  opacity: 0.5;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+.dot:hover {
+  opacity: 0.8;
+}
+
+.activeDot {
+  opacity: 1;
+} 
